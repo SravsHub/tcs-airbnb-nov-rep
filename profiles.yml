@@ -14,7 +14,7 @@ deploy_dbt_airbnb:
       warehouse: compute_wh
       # in the future you should switch this schema to use a new environment variable
       # definitely switch this to your schema though
-      schema: PROD
+      schema: DEV
       threads: 4
       client_session_keep_alive: False
     prod:
@@ -28,6 +28,6 @@ deploy_dbt_airbnb:
       role: accountadmin
       database: AIRBNB
       warehouse: compute_wh
-      schema: PRODUCTION
+      schema: PROD
       threads: 4
       client_session_keep_alive: False
